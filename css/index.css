@@ -54,33 +54,53 @@ html, body {
     display: flex;
 }
 
-/* LEFT SIDE */
+/* 
+
+LEFT SIDE 
+
+*/
+
 .left-side {
     width: 20%;
-    background-color: red;
+    height: 100%;
+    /* position: sticky; */
+    position: sticky;
+    top: 0;
+    background-color: #222629;
 }
+
+.left-side aside {
+    width: 100%;
+    height: 820px;
+}
+
 
 .top-side-header {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    background-color: gray;
-    padding: 20px;
+    /* background-color: gray; */
+    padding: 40px 20px;
 }
 
 .top-side-header img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     max-width: 100%;
 }
 
 .side-name-title {
-    align-self: center;
+    /* align-self: center; */
+    position: relative;
+    margin: 1.75em 1.5em 1.5em 1.5em;
+    min-height: 48px;
+    cursor: default;
 }
 
 .side-name-title h4 {
     font-size: 2.2rem;
     text-align: right;
+    color: white;
 }
 
 .side-name-title figure.pro-title {
@@ -89,10 +109,322 @@ html, body {
     text-align: right;
 }
 
+/* 
 
-/* RIGHT SIDE */
+MAIN CONTENT 
+
+*/
+
+div.divide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+div.side-divide div.side-nav {
+    display: flex;
+    flex-flow: column wrap;
+    /* background-color: green; */
+}
+
+div.side-nav div.side-intro {
+    padding: 20px;
+}
+
+div.side-intro.active {
+    background: #888888;
+    padding: 20px;
+}
+
+div.side-nav div.side-intro p {
+    /* background-color: red; */
+}
+
+div.side-nav div.side-intro a {
+    font-size: 2.3rem;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+}
+
+div.side-nav div.side-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+
+SIDE FOOTER 
+
+*/
+
+footer.side-footer {
+    /* display: flex; */
+    /* color: red; */
+    background: gray;
+}
+
+footer.side-footer a {
+margin-left: 5rem;
+font-size: 2rem;
+color: red;
+text-decoration: none;
+}
+
+
+
+/* 
+
+RIGHT SIDE MAIN 
+
+*/
+
+
 .right-side {
     width: 80%;
-    background-color: blue;
+    background-color: #f5fafa;
+}
+
+div.right-side header {
+    position: relative;
+    /* box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025); */
+}
+
+div.right-side header img {
+    width: 100%;
+    /* box-shadow: 0 1px 0 0; */
+    /* background: blue; */
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+}
+
+div.in-image {
+    /* position: absoulute; */
+    /* bottom: 50%; */
+    /* left: 80px; */
+    /* background-color: blue; */
+    /* display: inline-block; */
+    text-align: center;
+}
+
+div.in-image h1 {
+    font-size: 10rem;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid white; */
+    /* padding: 3%; */
+    /* box-shadow: 1px 1px 1px 1px; */
+    /* background: red; */
+    text-shadow: 1px 1px black;
+    /* background: red; */
+}
+
+div.in-image p {
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-size: 2rem;
+    display: flex;
+    /* background: red; */
+    display: inline-block;
+    padding: 10px 0 40px;
+    position: absolute;
+    bottom: 30%;
+    right: 35%;
+    text-align: center;
+    /* width: 100%; */
+}
+
+div.in-image button {
+    padding: 20px 70px;
+    border-radius: 10px;
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 27%;
+    left: 40%;
+    box-shadow: 0px 1px 1px 0px;
+    background: rgb(255, 202, 26);
+}
+
+div#gen-contain {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 
+
+Portfolio
+
+*/
+
+section.main-port {
+    /* box-shadow: 0 1px 0 0; */
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    /* background: blue; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
+
+section.main-port div#gen-contain-port {
+    width: 83%;
+    margin: 0 auto;
+}
+
+section.main-port h2 {
+    font-size: 5rem;
+    /* background-color: red; */
+    /* display: inline-block; */
+    text-align: center;
+    padding: 80px 0;
+}
+
+section.main-port p {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding: 10px;
+}
+
+div.gallery {
+    /* background: red; */
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    /* justify-content: center; */
+    padding-bottom: 50px;
+}
+
+div.gallery div.first-column {
+  
+}
+
+div.gallery div.second-column {
+   
+}
+
+div.gallery div.third-column {
+   
+}
+
+div.gallery article.item {
+    padding: 20px;
+}
+
+section.main-port div.gallery article.item img.landscape {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section.main-port div.gallery article.item h5 {
+    background: white;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+}
+
+section.main-port div.gallery article.item img.portait {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+section.main-port div.gallery div.first-column article#no-border {
+    background: red;
+}
+
+section.main-about {
+    background: #ecf1f1;
+    padding: 80px 0;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+}
+
+section.main-about h2 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 0 0 80px 0;
+}
+
+section.main-about img.mid-banner {
+    height: 300px;
+    width: 100%;
+}
+
+section.main-about p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 10px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+/* 
+
+CONTACT
+
+*/
+
+section.main-contact {
+    background: #e8edec;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    padding-bottom: 50px;
+}
+
+section.main-contact h2 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 80px 0;
+}
+
+section.main-contact p {
+    font-size: 2rem;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+section.main-contact .box-button {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+section.main-contact button {
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer.main-footer {
+    background: #dce3e2;
+    padding: 50px 0 15px 0;
+}
+
+footer.main-footer ul li {
+    text-align: center;
+    font-size: 1.5rem;
 }
 

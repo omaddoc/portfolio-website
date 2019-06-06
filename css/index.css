@@ -54,6 +54,14 @@ html, body {
     display: flex;
 }
 
+h2 {
+    color: #666;
+}
+
+p {
+    color: #888;
+}
+
 /* 
 
 LEFT SIDE 
@@ -71,7 +79,7 @@ LEFT SIDE
 
 .left-side aside {
     width: 100%;
-    height: 820px;
+    height: 1000px;
 }
 
 
@@ -87,6 +95,7 @@ LEFT SIDE
     width: 60px;
     height: 60px;
     max-width: 100%;
+    border-radius: 50%;
 }
 
 .side-name-title {
@@ -111,7 +120,7 @@ LEFT SIDE
 
 /* 
 
-MAIN CONTENT 
+SIDE MAIN CONTENT 
 
 */
 
@@ -127,13 +136,24 @@ div.side-divide div.side-nav {
     /* background-color: green; */
 }
 
+div.side-divide div.side-nav nav div.active {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    color: #fff;
+}
+
+div.side-nav div.side-intro i.fas {
+    color: white;
+    font-size: 2.5rem;
+}
+
 div.side-nav div.side-intro {
     padding: 20px;
 }
 
 div.side-intro.active {
-    background: #888888;
-    padding: 20px;
+    /* background: #888888; */
+    /* padding: 20px; */
 }
 
 div.side-nav div.side-intro p {
@@ -161,16 +181,16 @@ SIDE FOOTER
 footer.side-footer {
     /* display: flex; */
     /* color: red; */
-    background: gray;
+    /* background: gray; */
 }
 
-footer.side-footer a {
-margin-left: 5rem;
+footer.side-footer i {
+margin-left: 10%;
 font-size: 2rem;
 color: red;
 text-decoration: none;
+padding: 15px 0;
 }
-
 
 
 /* 
@@ -206,6 +226,12 @@ div.in-image {
     text-align: center;
 }
 
+div.right-side header div.in-image div#top-mid-section {
+    width: 50%;
+    margin: 0 auto;
+    background: red;
+}
+
 div.in-image h1 {
     font-size: 10rem;
     font-weight: bolder;
@@ -225,17 +251,17 @@ div.in-image h1 {
 div.in-image p {
     color: white;
     text-align: center;
-    margin: 40px;
+    /* margin: 40px; */
     font-size: 2rem;
-    display: flex;
+    /* display: flex; */
     /* background: red; */
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 0 40px;
     position: absolute;
     bottom: 30%;
-    right: 35%;
+    /* right: 30%; */
     text-align: center;
-    /* width: 100%; */
+    width: 50%;
 }
 
 div.in-image button {
@@ -244,7 +270,7 @@ div.in-image button {
     display: block;
     font-size: 2rem;
     position: absolute;
-    bottom: 27%;
+    bottom: 15%;
     left: 40%;
     box-shadow: 0px 1px 1px 0px;
     background: rgb(255, 202, 26);
@@ -336,7 +362,7 @@ section.main-port div.gallery article.item h5 {
     box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 }
 
-section.main-port div.gallery article.item img.portait {
+section.main-port div.gallery article.item img.portrait {
     width: 300px;
     height: 300px;
     margin: 0;

@@ -294,11 +294,13 @@ section.main-port {
     /* width: 100%; */
     /* margin: 0 auto; */
     /* width: 100%; */
+    padding-bottom: 50px;
 }
 
 section.main-port div#gen-contain-port {
-    width: 83%;
+    width: 80%;
     margin: 0 auto;
+    /* background: red; */
 }
 
 section.main-port h2 {
@@ -315,15 +317,17 @@ section.main-port p {
     letter-spacing: 1px;
     line-height: 50px;
     padding: 10px;
+    /* background: blue; */
 }
 
 div.gallery {
     /* background: red; */
-    width: 100%;
+    /* width: 100%; */
     /* position: relative; */
     display: flex;
+    padding-left: 5%;
     /* justify-content: center; */
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 div.gallery div.first-column {
@@ -339,7 +343,11 @@ div.gallery div.third-column {
 }
 
 div.gallery article.item {
-    padding: 20px;
+    padding: 5%;
+    /* width: 100%; */
+    /* background: red; */
+    padding-left: 10%;
+    /* text-align: center; */
 }
 
 section.main-port div.gallery article.item img.landscape {
@@ -362,6 +370,7 @@ section.main-port div.gallery article.item h5 {
     box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 }
 
+
 section.main-port div.gallery article.item img.portrait {
     width: 300px;
     height: 300px;
@@ -374,8 +383,16 @@ section.main-port div.gallery article.item img.portrait {
 }
 
 section.main-port div.gallery div.first-column article#no-border {
-    background: red;
+    /* background: red; */
 }
+
+
+/* 
+
+ABOUT
+
+*/
+
 
 section.main-about {
     background: #ecf1f1;
